@@ -273,6 +273,12 @@ body {
 }
 .portfolio .portfolio-content .card {
   background-color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.portfolio .portfolio-content .card:hover {
+  background-color: #e4e4e4;
+  margin: -10px;
 }
 .portfolio .portfolio-content .card img {
   width: 100%;
@@ -288,6 +294,7 @@ body {
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 0;
+  width: 300px;
 }
 /* end Portfolio */
 
