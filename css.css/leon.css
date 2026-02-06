@@ -275,10 +275,13 @@ body {
   background-color: white;
   cursor: pointer;
   transition: 0.5s;
+  border: solid white 5px;
 }
 .portfolio .portfolio-content .card:hover {
   background-color: #e4e4e4;
   margin: -10px;
+  border: solid #e4e4e4 10px;
+  transform: translateY(50px);
 }
 .portfolio .portfolio-content .card img {
   width: 100%;
