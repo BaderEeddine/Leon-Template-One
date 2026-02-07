@@ -268,8 +268,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
   gap: 30px;
   margin-top: 100px;
-  margin-bottom: 100px;
-  width: 100%;
+
 }
 .portfolio .portfolio-content .card {
   background-color: white;
@@ -281,7 +280,7 @@ body {
   background-color: #e4e4e4;
   margin: -10px;
   border: solid #e4e4e4 10px;
-  transform: translateY(50px);
+  transform: translateY(20px);
 }
 .portfolio .portfolio-content .card img {
   width: 100%;
@@ -300,6 +299,49 @@ body {
   width: 300px;
 }
 /* end Portfolio */
+/* start About */
+.about {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.about .about-content {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.about .about-content .img {
+  position: relative;
+  width: 250px;
+  height: 375px;
+}
+.about .about-content .img::before {
+  content: "";
+  position: absolute;
+  background-color: #ebeced;
+  width: 100px;
+  height: calc(100% + 80px);
+  top: -40px;
+  left: -20px;
+  z-index: -1
+}
+.about .about-content .img::after {
+  top: -40px;
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 300px;
+  border-left: 80px solid var(--main-color);
+  border-bottom: 80px solid var(--main-color);
+  right: -150px;
+  z-index: -2;
+
+}
+.about .about-content img {
+  max-width: 100%;
+}
+/* end About */
 
 
 
