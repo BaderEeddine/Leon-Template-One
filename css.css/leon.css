@@ -8,6 +8,10 @@
   --secondary-color: #2c4755;
   --section-padding: 60px;
   --section-background: #f6f6f6;
+  --main-duration: 0.5s;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   font-family: work sans, sans-serif;
@@ -71,7 +75,7 @@ body {
 }
 .header .links .icon span:nth-child(2) {
   width: 60%;
-  transition: 0.3s;
+  transition: var(--main-duration);
 }
 .header .links .icon span:last-child {
   width: 100%;
@@ -84,7 +88,7 @@ body {
   top: calc(100% + 20px);
   position: absolute;
   right: 0;
-  transition: 1s;
+  transition: var(--main-duration);
   padding: 0;
   margin: 0;
   z-index: 1;
@@ -103,15 +107,15 @@ body {
 }
 .header .links  ul li {
   position: relative;
-  transition: 0.5s;
+  transition: var(--main-duration);
 }
 .header .links  ul li:hover a {
-  transition: 0.5s;
+  transition: var(--main-duration);
   margin-left: 20px;
 }
 .header .links ul a {
   text-decoration: none;
-  transition: 0.5s;
+  transition: var(--main-duration);
   display: block;
   color: #333;
   padding: 20px;
@@ -274,7 +278,7 @@ body {
 .portfolio .portfolio-content .card {
   background-color: white;
   cursor: pointer;
-  transition: 0.5s;
+  transition: var(--main-duration);
   border: solid white 5px;
 }
 .portfolio .portfolio-content .card:hover {
